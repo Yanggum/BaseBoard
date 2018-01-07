@@ -52,8 +52,6 @@ namespace Pc.PcBoard.Resources.MultilangApi
                 {
                     case "EN":
                         return LangCultureParameter.En;
-                    case "ZH":
-                        return LangCultureParameter.Zh;
                     default:
                     case "KO":
                         return LangCultureParameter.Ko;
@@ -108,24 +106,25 @@ namespace Pc.PcBoard.Resources.MultilangApi
 		 */
         private void LoadXml(XmlDocument xml)
         {
-            //<resource xmlns:xsi="http:www.w3.org/2001/XMLSchema-instance">
-            //  <multilang>
-            //    <set>
-            //      <key>sampleResource</key>
-            //      <val>
-            //        <ko>샘플입니다.</ko>
-            //        <en>샘플입니다.</en>
-            //        <zh>샘플입니다.</zh>
-            //        <ja>샘플입니다.</ja>
-            //      </val>
-            //    </set>
-            //  </multilang>
-            //</resource>
+			// <?xml version="1.0" encoding="utf-8"?>
 
-            MultilangDictionary = new Dictionary<string, Dictionary<LangCultureParameter, string>>();
+			// 
+			// <MultiLanguage>
+			// 	<Section section="샘플">
+			// 	<set>
+			// 	  <key><![CDATA[샘플입니다.]]></key>
+			// 	  <val>
+			// 		<ko><![CDATA[샘플입니다.]]></ko>
+			// 		<en><![CDATA[샘플입니다.]]></en>
+			// 	  </val>
+			// 	 </set>
+			//   </Section>
+			// </MultiLanguage>
+
+			MultilangDictionary = new Dictionary<string, Dictionary<LangCultureParameter, string>>();
 
             //XmlNodeList setNodeList = xml.SelectNodes("/resource/multiLang/set");
-            XmlNodeList setNodeList = xml.SelectNodes("/PortalMultiLanguage/Section/set");
+            XmlNodeList setNodeList = xml.SelectNodes("/MultiLanguage/Section/set");
 
             foreach (XmlNode setNode in setNodeList)
             {
@@ -150,52 +149,11 @@ namespace Pc.PcBoard.Resources.MultilangApi
                                 valueStore.Add(LangCultureParameter.En, langValue);
                                 break;
                             }
-                        case "ZH":
-                            {
-                                valueStore.Add(LangCultureParameter.Zh, langValue);
-                                break;
-                            }
                     }
                 }
 
                 MultilangDictionary.Add(key, valueStore);
             }
         }
-
-        ///*!
-        // * \brief   현재 문화권을 설정합니다.
-        // */
-        //public void SetCurrentCulture(string culture)
-        //{ SetCurrentCultureInternal(culture); }
-
-        ///*!
-        // * \brief   현재 문화권을 설정합니다.
-        // */
-        //public void SetCurrentCulture(CultureInfo culture)
-        //{ SetCurrentCultureInternal(culture.Name); }
-
-        ///*!
-        // * \brief   현재 문화권을 설정합니다.
-        // */
-        //private void SetCurrentCultureInternal(string culture)
-        //{
-
-        //    if (culture.Equals("ko", StringComparison.OrdinalIgnoreCase))
-        //    {
-        //        CurrentLang = LangCultureParameter.Ko;
-        //    }
-        //    else if (culture.Equals("en", StringComparison.OrdinalIgnoreCase))
-        //    {
-        //        CurrentLang = LangCultureParameter.En;
-        //    }
-        //    else if (culture.Equals("zh", StringComparison.OrdinalIgnoreCase))
-        //    {
-        //        CurrentLang = LangCultureParameter.Zh;
-        //    }
-        //    else
-        //    {
-        //        CurrentLang = LangCultureParameter.Ko;
-        //    }
-        //}
     }
 }
