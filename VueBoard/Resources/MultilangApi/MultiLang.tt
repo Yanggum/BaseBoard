@@ -11,7 +11,7 @@ using System;
 
 namespace Pc.PcBoard.Resources.MultilangApi {
 
-	public class MultiLanguage {
+	public class MultiLang {
 <#
 	string projectDir = Host.ResolveAssemblyReference("$(ProjectDir)");
 	string xmlPath = Path.Combine(projectDir, "xml\\MultiLanguage.xml");

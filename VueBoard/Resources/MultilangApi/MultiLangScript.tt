@@ -8,27 +8,27 @@
 <#@ import namespace="System.Xml" #>
 <#@ import namespace="System.IO" #>
 
-var MultiLanguageScript = '';
+var MultiLangScript = '';
 
 function SetCurrentLanguage(languageCode) {
 	languageCode = languageCode.toLowerCase();
     switch (languageCode) {
         case "ko":
-            MultiLanguageScript = MULTI_LANG_KO;
+            MultiLangScript = MULTI_LANG_KO;
             break;
 
         case "en":
-            MultiLanguageScript = MULTI_LANG_EN;
+            MultiLangScript = MULTI_LANG_EN;
             break;
 
         default:
-            MultiLanguageScript = MULTI_LANG_KO;
+            MultiLangScript = MULTI_LANG_KO;
             break;
     }
 }
 
 function GetMultiLanguage(key){
-	return MultiLanguageScript[key];
+	return MultiLangScript[key];
 }
 
 function SetLanguage(currentLanguage)

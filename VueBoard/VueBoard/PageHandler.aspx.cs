@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pc.PcBoard.Resources.MultilangApi;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,7 @@ namespace Pc.PcBoard.Web
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			Console.WriteLine(MultiLang.Comment);			
 		}
 	}
 }

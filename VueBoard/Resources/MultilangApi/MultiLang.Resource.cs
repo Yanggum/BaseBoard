@@ -2,7 +2,7 @@
 
 namespace Pc.PcBoard.Resources.MultilangApi {
 
-	public class MultiLanguage {
+	public class MultiLang {
 
 		/// <summary>
 		/// '댓글' 와 유사한 다국어 메시지를 가져옵니다.
