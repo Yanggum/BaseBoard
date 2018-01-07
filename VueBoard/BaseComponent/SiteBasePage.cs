@@ -4,10 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseComponent
+namespace Pc.PcBoard.BaseComponent
 {
-    public class SiteBasePage : System.Web.UI.Page
-    {
+	/// <summary>
+	/// 사이트 기본 페이지
+	/// </summary>
+	public class SiteBasePage : System.Web.UI.Page
+	{
+		public SiteBasePage() : base()
+		{
+
+		}
+
 
     }
 }

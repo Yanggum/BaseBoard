@@ -7,7 +7,7 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace VueBoard {
+namespace Pc.PcBoard.Web {
     
     
     public partial class PageHandler {

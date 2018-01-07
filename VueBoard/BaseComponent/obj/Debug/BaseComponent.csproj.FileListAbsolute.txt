@@ -1,0 +1,6 @@
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\bin\Debug\BaseComponent.dll
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\bin\Debug\BaseComponent.pdb
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\obj\Debug\BaseComponent.csprojResolveAssemblyReference.cache
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\obj\Debug\BaseComponent.csproj.CoreCompileInputs.cache
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\obj\Debug\BaseComponent.dll
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\obj\Debug\BaseComponent.pdb

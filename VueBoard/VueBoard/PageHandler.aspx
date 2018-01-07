@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PageHandler.aspx.cs" Inherits="VueBoard.PageHandler" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PageHandler.aspx.cs" Inherits="Pc.PcBoard.Web.PageHandler" %>
 
 <!DOCTYPE html>
 

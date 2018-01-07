@@ -7,7 +7,7 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace VueBoard.Base.MasterPages {
+namespace Pc.PcBoard.Web.Base.MasterPages {
     
     
     public partial class BaseMasterPage {

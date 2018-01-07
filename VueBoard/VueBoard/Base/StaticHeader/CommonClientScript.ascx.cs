@@ -4,10 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Pc.PcBoard.BaseComponent;
 
-namespace VueBoard.Base.StaticHeader
+namespace Pc.PcBoard.Web.Base.StaticHeader
 {
-	public partial class CommonClientScript : System.Web.UI.UserControl
+	public partial class CommonClientScript : SiteBaseControl
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

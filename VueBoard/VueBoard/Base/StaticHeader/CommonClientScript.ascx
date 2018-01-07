@@ -1,1 +1,1 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CommonClientScript.ascx.cs" Inherits="VueBoard.Base.StaticHeader.CommonClientScript" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CommonClientScript.ascx.cs" Inherits="Pc.PcBoard.Web.Base.StaticHeader.CommonClientScript" %>

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Pc.PcBoard.BaseComponent;
 
-namespace VueBoard.Base.MasterPages
+namespace Pc.PcBoard.Web.Base.MasterPages
 {
-	public partial class BaseMasterPage : System.Web.UI.MasterPage
+	public partial class BaseMasterPage : SiteBaseMaster
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

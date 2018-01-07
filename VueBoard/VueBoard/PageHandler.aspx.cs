@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace VueBoard
+namespace Pc.PcBoard.Web
 {
 	public partial class PageHandler : System.Web.UI.Page
 	{
