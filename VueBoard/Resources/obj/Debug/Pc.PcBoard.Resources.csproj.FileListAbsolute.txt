@@ -10,6 +10,8 @@ D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\roslyn\System.Reflec
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\roslyn\vbc.exe
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\roslyn\VBCSCompiler.exe
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Pc.PcBoard.Resources.dll
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Pc.PcBoard.Resources.pdb
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Microsoft.AI.Agent.Intercept.dll
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Microsoft.AI.DependencyCollector.dll
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -25,8 +27,8 @@ D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Microsoft.AI.Windows
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Microsoft.ApplicationInsights.xml
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\obj\Debug\Pc.PcBoard.Resources.csprojResolveAssemblyReference.cache
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\obj\Debug\Pc.PcBoard.Resources.Properties.Resources.resources
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\obj\Debug\Pc.PcBoard.Resources.csproj.GenerateResource.Cache
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\obj\Debug\Pc.PcBoard.Resources.csproj.CoreCompileInputs.cache
-D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Pc.PcBoard.Resources.dll
-D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\bin\Pc.PcBoard.Resources.pdb
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\obj\Debug\Pc.PcBoard.Resources.dll
 D:\Project\Project\2018\PortalVuejs4\VueBoard\Resources\obj\Debug\Pc.PcBoard.Resources.pdb

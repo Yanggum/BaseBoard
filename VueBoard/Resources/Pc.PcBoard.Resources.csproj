@@ -384,9 +384,35 @@
     <Content Include="js\vendors\owl.carousel.min.js" />
     <Content Include="js\vendors\owl.carousel2.thumbs.js" />
     <Content Include="js\_jquery.ui.js" />
+    <Content Include="MultilangApi\MultiLang.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MultiLang.Resource.cs</LastGenOutput>
+    </Content>
+    <Content Include="MultilangApi\MultiLangScript.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MultiLangScript.Resource.js</LastGenOutput>
+    </Content>
+    <Content Include="MultilangApi\MultiLangScript.Resource.js">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiLangScript.tt</DependentUpon>
+    </Content>
+    <Content Include="xml\MultiLanguage.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MultilangApi\LangCultureParameter.cs" />
+    <Compile Include="MultilangApi\MultiLang.Resource.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiLang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MultilangApi\MultilangManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\.DS_Store" />
@@ -401,6 +427,15 @@
     <Content Include="js\jstree\themes\default-dark\.DS_Store" />
     <Content Include="js\jstree\themes\default\.DS_Store" />
     <Content Include="js\vendors\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

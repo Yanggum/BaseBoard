@@ -180,6 +180,10 @@
       <Project>{c50424a3-07c7-47fd-9874-c62951ffcbfa}</Project>
       <Name>Pc.PcBoard.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Resources\Pc.PcBoard.Resources.csproj">
+      <Project>{ffec04fd-9cc8-4b41-8dec-1e92d30d205a}</Project>
+      <Name>Pc.PcBoard.Resources</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

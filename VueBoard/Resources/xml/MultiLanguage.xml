@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<MultiLanguage>
+  <Section section="기존다국어언어">
+    <set Note="" UpdatedVersion="20170324">
+      <key><![CDATA[Comment]]></key>
+      <val>
+        <ko><![CDATA[댓글]]></ko>
+        <en><![CDATA[Comment]]></en>
+      </val>
+    </set>
+  </Section>
+</MultiLanguage>
