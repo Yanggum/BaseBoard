@@ -1,0 +1,5 @@
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\bin\Release\Pc.PcBoard.BaseComponent.dll
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\bin\Release\Pc.PcBoard.BaseComponent.pdb
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\obj\Release\Pc.PcBoard.BaseComponent.csproj.CoreCompileInputs.cache
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\obj\Release\Pc.PcBoard.BaseComponent.dll
+D:\Project\Project\2018\PortalVuejs4\VueBoard\BaseComponent\obj\Release\Pc.PcBoard.BaseComponent.pdb

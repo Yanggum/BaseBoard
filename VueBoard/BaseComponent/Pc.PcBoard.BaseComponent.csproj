@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -42,16 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SiteBaseControl.cs">
+    <Compile Include="Base\BaseContext.cs" />
+    <Compile Include="Base\BaseEntity.cs" />
+    <Compile Include="Base\BaseObject.cs" />
+    <Compile Include="Base\SiteBaseControl.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SiteBaseMaster.cs">
+    <Compile Include="Base\ISiteBaseInterface.cs" />
+    <Compile Include="Base\SiteBaseMaster.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SiteBasePage.cs">
+    <Compile Include="Base\SiteBasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Base\WebInfoEntity.cs" />
+    <Compile Include="Config\WebConfigManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

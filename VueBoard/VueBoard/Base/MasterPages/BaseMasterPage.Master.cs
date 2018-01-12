@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Pc.PcBoard.BaseComponent;
+using Pc.PcBoard.BaseComponent.Base;
 
 namespace Pc.PcBoard.Web.Base.MasterPages
 {

@@ -11,7 +11,6 @@ namespace Pc.PcBoard.Resources.MultilangApi
     public enum LangCultureParameter
     {
         Ko,
-        En,
-        Zh
+        En
     }
 }

@@ -12,7 +12,6 @@ namespace Pc.PcBoard.Web
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			Console.WriteLine(MultiLang.Comment);			
 		}
 	}
 }

@@ -34,6 +34,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <IncludeAppPool>true</IncludeAppPool>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -121,12 +124,325 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Base\StaticHeader\CommonClientScript.ascx" />
+    <Content Include="Base\StaticHeader\GnbHeaderControl.ascx" />
+    <Content Include="Board\Pages\BoardTest.aspx" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\common.css" />
+    <Content Include="css\dashboard.css" />
+    <Content Include="css\datepicker.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\fullcalendar.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jstree.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\mail.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\object.css" />
+    <Content Include="css\obj\ContextMenuHelper.css" />
+    <Content Include="css\obj\fine-uploader-gallery.min.css" />
+    <Content Include="css\obj\fullcalendar.css" />
+    <Content Include="css\obj\jquery-ui.min.css" />
+    <Content Include="css\obj\jquery.datetimepicker.full.css" />
+    <Content Include="css\obj\jquery.timepicker.css" />
+    <Content Include="css\obj\jquery.timepicker.min.css" />
+    <Content Include="css\obj\owl.carousel.css" />
+    <Content Include="css\popup.css" />
+    <Content Include="css\ui-redesign-calendar.css" />
+    <Content Include="images\.DS_Store" />
+    <Content Include="images\admin\img_admin_lnb.png" />
+    <Content Include="images\approval\arrow_appr_status.png" />
+    <Content Include="images\approval\img_appr_lnb.png" />
+    <Content Include="images\approval\img_appr_pop.png" />
+    <Content Include="images\common\arrow_header.png" />
+    <Content Include="images\common\bg_gradient.png" />
+    <Content Include="images\common\btn_drag_horiz.png" />
+    <Content Include="images\common\btn_drag_vert.png" />
+    <Content Include="images\common\datepicker.png" />
+    <Content Include="images\common\default-104x70.png" />
+    <Content Include="images\common\default-120x80.png" />
+    <Content Include="images\common\default-180x106.png" />
+    <Content Include="images\common\default-210x125.png" />
+    <Content Include="images\common\default-80x80.png" />
+    <Content Include="images\common\default-people-100x120.png" />
+    <Content Include="images\common\default-people-30x30.png" />
+    <Content Include="images\common\default-people-40x40.png" />
+    <Content Include="images\common\default-people-60x60.png" />
+    <Content Include="images\common\default-people-profile.png" />
+    <Content Include="images\common\ico_extension.png" />
+    <Content Include="images\common\ico_jstree.png" />
+    <Content Include="images\common\ico_jstree_org.png" />
+    <Content Include="images\common\ico_jstree_org_vertLine.png" />
+    <Content Include="images\common\ico_jstree_org_vertLine_last.png" />
+    <Content Include="images\common\ico_jstree_org_vertLine_middle.png" />
+    <Content Include="images\common\ico_profile.png" />
+    <Content Include="images\common\ico_quicklink.png" />
+    <Content Include="images\common\img_banner.png" />
+    <Content Include="images\common\img_banner.psd" />
+    <Content Include="images\common\img_board.png" />
+    <Content Include="images\common\img_btn.png" />
+    <Content Include="images\common\img_etc.png" />
+    <Content Include="images\common\img_flexslider.png" />
+    <Content Include="images\common\img_form.png" />
+    <Content Include="images\common\img_header.png" />
+    <Content Include="images\common\img_lnb.png" />
+    <Content Include="images\common\img_memo_check.png" />
+    <Content Include="images\common\img_owl.png" />
+    <Content Include="images\common\img_paginate.png" />
+    <Content Include="images\common\img_popup.png" />
+    <Content Include="images\common\img_sched.png" />
+    <Content Include="images\common\img_sm.png" />
+    <Content Include="images\common\img_step.png" />
+    <Content Include="images\common\img_survey.png" />
+    <Content Include="images\common\img_table.png" />
+    <Content Include="images\common\logo_gwp_header.png" />
+    <Content Include="images\common\m-check.svg" />
+    <Content Include="images\common\m-not.svg" />
+    <Content Include="images\common\survey_guide.jpg" />
+    <Content Include="images\common\tree.png" />
+    <Content Include="images\common\tree_elbow.png" />
+    <Content Include="images\common\tree_elbow_last.png" />
+    <Content Include="images\common\tree_line.png" />
+    <Content Include="images\common\tree_sm.png" />
+    <Content Include="images\common\tree_sm_elbow.png" />
+    <Content Include="images\common\tree_sm_elbow_last.png" />
+    <Content Include="images\common\tree_sm_line.png" />
+    <Content Include="images\community\comm_header_bg01.jpg" />
+    <Content Include="images\community\comm_header_bg02.jpg" />
+    <Content Include="images\community\comm_header_bg03.jpg" />
+    <Content Include="images\community\comm_header_bg04.jpg" />
+    <Content Include="images\community\comm_header_bg05.jpg" />
+    <Content Include="images\community\default-80x80.png" />
+    <Content Include="images\community\img_community.png" />
+    <Content Include="images\community\img_community_main.png" />
+    <Content Include="images\Icons 16x16\Access 2013.png" />
+    <Content Include="images\Icons 16x16\Excel 2013.png" />
+    <Content Include="images\Icons 16x16\file.png" />
+    <Content Include="images\Icons 16x16\Infopath 2013.png" />
+    <Content Include="images\Icons 16x16\Lync 2013.png" />
+    <Content Include="images\Icons 16x16\OneNote 2013.png" />
+    <Content Include="images\Icons 16x16\Outlook 2013.png" />
+    <Content Include="images\Icons 16x16\PowerPoint 2013.png" />
+    <Content Include="images\Icons 16x16\Publisher 2013.png" />
+    <Content Include="images\Icons 16x16\Word 2013.png" />
+    <Content Include="images\Icons 16x16\zip.png" />
+    <Content Include="images\mail\img_mail_board.png" />
+    <Content Include="images\mail\img_mail_lnb.png" />
+    <Content Include="images\mail\logo.png" />
+    <Content Include="images\main\.DS_Store" />
+    <Content Include="images\main\icon_inaccessible.png" />
+    <Content Include="images\main\img_ceo_inaccessible.png" />
+    <Content Include="images\main\img_guide.png" />
+    <Content Include="images\main\img_main.png" />
+    <Content Include="images\main\img_problem.png" />
+    <Content Include="images\main\img_webzine_inaccessible.png" />
+    <Content Include="images\main\linkIcon\linkIcon01.png" />
+    <Content Include="images\main\linkIcon\linkIcon02.png" />
+    <Content Include="images\main\linkIcon\linkIcon03.png" />
+    <Content Include="images\main\linkIcon\linkIcon04.png" />
+    <Content Include="images\main\linkIcon\linkIcon05.png" />
+    <Content Include="images\main\linkIcon\linkIcon06.png" />
+    <Content Include="images\main\linkIcon\linkIcon07.png" />
+    <Content Include="images\main\linkIcon\linkIcon08.png" />
+    <Content Include="images\main\linkIcon\linkIcon09.png" />
+    <Content Include="images\main\linkIcon\linkIcon10.png" />
+    <Content Include="images\main\linkIcon\linkIcon11.png" />
+    <Content Include="images\main\linkIcon\linkIcon12.png" />
+    <Content Include="images\main\linkIcon\linkIcon13.png" />
+    <Content Include="images\main\linkIcon\linkIcon14.png" />
+    <Content Include="images\main\linkIcon\linkIcon15.png" />
+    <Content Include="images\main\linkIcon\linkIcon16.png" />
+    <Content Include="images\main\linkIcon\linkIcon17.png" />
+    <Content Include="images\main\linkIcon\linkIcon18.png" />
+    <Content Include="images\main\linkIcon\linkIcon19.png" />
+    <Content Include="images\main\linkIcon\linkIcon20.png" />
+    <Content Include="images\main\linkIcon\linkIcon21.png" />
+    <Content Include="images\main\linkIcon\linkIcon22.png" />
+    <Content Include="images\main\linkIcon\linkIcon23.png" />
+    <Content Include="images\main\linkIcon\linkIcon24.png" />
+    <Content Include="images\main\linkIcon\linkIcon25.png" />
+    <Content Include="images\main\linkIcon\sample1.png" />
+    <Content Include="images\notimail\bar_title.png" />
+    <Content Include="images\notimail\ico_cop.png" />
+    <Content Include="images\notimail\ico_png.png" />
+    <Content Include="images\notimail\ico_pptx.png" />
+    <Content Include="images\notimail\ico_xlsx.png" />
+    <Content Include="images\notimail\logo.png" />
+    <Content Include="images\notimail\Untitled-1.png" />
+    <Content Include="images\popup\img_alert.png" />
+    <Content Include="images\popup\img_popup.png" />
+    <Content Include="images\popup\img_yellowpage.png" />
+    <Content Include="images\preloader\preloader.1.0.0.gif" />
+    <Content Include="images\preloader\preloader.2.0.0.gif" />
+    <Content Include="images\preloader\preloader.2.1.0.gif" />
+    <Content Include="images\preloader\preloader.3.0.0.gif" />
+    <Content Include="images\preloader\preloader.4.0.0.gif" />
+    <Content Include="images\preloader\preloader.5.0.0.gif" />
+    <Content Include="images\preloader\preloader.gif" />
+    <Content Include="images\reservation\ico_allday.png" />
+    <Content Include="images\reservation\ico_clock.png" />
+    <Content Include="images\reservation\ico_inprogress.png" />
+    <Content Include="images\reservation\ico_recurrence.png" />
+    <Content Include="images\sample\.DS_Store" />
+    <Content Include="images\sample\banner_lnb01.png" />
+    <Content Include="images\sample\banner_lnb02.png" />
+    <Content Include="images\sample\banner_main01.png" />
+    <Content Include="images\sample\banner_main02.png" />
+    <Content Include="images\sample\banner_main11.png" />
+    <Content Include="images\sample\banner_main21.png" />
+    <Content Include="images\sample\banner_main22.png" />
+    <Content Include="images\sample\calendar.png" />
+    <Content Include="images\sample\canvas.png" />
+    <Content Include="images\sample\collaboration_01.jpg" />
+    <Content Include="images\sample\Collaboration_02.jpg" />
+    <Content Include="images\sample\Collaboration_03.jpg" />
+    <Content Include="images\sample\Collaboration_04.jpg" />
+    <Content Include="images\sample\Collaboration_05.jpg" />
+    <Content Include="images\sample\Collaboration_06.jpg" />
+    <Content Include="images\sample\Collaboration_07.jpg" />
+    <Content Include="images\sample\comm_bg01.jpg" />
+    <Content Include="images\sample\comm_bg02.jpg" />
+    <Content Include="images\sample\comm_bg03.jpg" />
+    <Content Include="images\sample\comm_bg04.jpg" />
+    <Content Include="images\sample\comm_bg05.jpg" />
+    <Content Include="images\sample\comm_header_bg01.jpg" />
+    <Content Include="images\sample\comm_header_bg02.jpg" />
+    <Content Include="images\sample\comm_header_bg03.jpg" />
+    <Content Include="images\sample\comm_header_bg04.jpg" />
+    <Content Include="images\sample\comm_header_bg05.jpg" />
+    <Content Include="images\sample\comm_img01.jpg" />
+    <Content Include="images\sample\comm_img02.jpg" />
+    <Content Include="images\sample\comm_img03.jpg" />
+    <Content Include="images\sample\comm_img04.jpg" />
+    <Content Include="images\sample\editor.jpg" />
+    <Content Include="images\sample\fullcalendar.png" />
+    <Content Include="images\sample\img_comment01.jpg" />
+    <Content Include="images\sample\img_header_banner.png" />
+    <Content Include="images\sample\img_header_banner02.png" />
+    <Content Include="images\sample\img_mainbanner.png" />
+    <Content Include="images\sample\img_main_banner.png" />
+    <Content Include="images\sample\img_main_thumbnail01.png" />
+    <Content Include="images\sample\img_main_thumbnail02.png" />
+    <Content Include="images\sample\img_poll.jpg" />
+    <Content Include="images\sample\img_reference01.png" />
+    <Content Include="images\sample\img_social01.png" />
+    <Content Include="images\sample\img_social02.png" />
+    <Content Include="images\sample\img_thumbnail.png" />
+    <Content Include="images\sample\img_toktok_gnb.jpg" />
+    <Content Include="images\sample\img_view01.jpg" />
+    <Content Include="images\sample\main_banner01.png" />
+    <Content Include="images\sample\main_banner02.png" />
+    <Content Include="images\sample\main_banner03.png" />
+    <Content Include="images\sample\main_banner04.png" />
+    <Content Include="images\sample\main_ceo.png" />
+    <Content Include="images\sample\main_webzine.png" />
+    <Content Include="images\sample\Matrix_01.jpg" />
+    <Content Include="images\sample\Matrix_02.jpg" />
+    <Content Include="images\sample\Matrix_03.jpg" />
+    <Content Include="images\sample\Matrix_04.jpg" />
+    <Content Include="images\sample\Matrix_05.jpg" />
+    <Content Include="images\sample\Matrix_06.jpg" />
+    <Content Include="images\sample\profile01.jpg" />
+    <Content Include="images\sample\profile02.jpg" />
+    <Content Include="images\sample\profile03.jpg" />
+    <Content Include="images\sample\profile04.jpg" />
+    <Content Include="images\sample\profile05.jpg" />
+    <Content Include="images\sample\schedule_calendar.png" />
+    <Content Include="images\sample\Social_01.jpg" />
+    <Content Include="images\sample\Social_02.jpg" />
+    <Content Include="images\sample\Thumbnail_01.png" />
+    <Content Include="images\sample\Thumbnail_02.jpg" />
+    <Content Include="images\sample\toktok.jpg" />
+    <Content Include="images\sample\toktok_header.png" />
+    <Content Include="images\sample\_img_main.png" />
+    <Content Include="images\tempimage\dashminus.gif" />
+    <Content Include="images\tempimage\dashplus.gif" />
+    <Content Include="images\tempimage\folder.gif" />
+    <Content Include="images\tempimage\l.gif" />
+    <Content Include="images\tempimage\leaf.gif" />
+    <Content Include="images\tempimage\t.gif" />
+    <Content Include="images\unifiedsearch\img_unifiedsearch.png" />
+    <Content Include="js\.DS_Store" />
+    <Content Include="js\Common\AjaxHelper.js" />
+    <Content Include="js\Common\bootstrap-paginator.js" />
+    <Content Include="js\Common\bootstrap.js" />
+    <Content Include="js\Common\bootstrap.min.js" />
+    <Content Include="js\Common\clipboard.min.js" />
+    <Content Include="js\Common\jquery-3.2.1.js" />
+    <Content Include="js\Common\jquery-3.2.1.min.js" />
+    <Content Include="js\Common\jquery.cookie.js" />
+    <Content Include="js\Common\jquery.datetimepicker.full.js" />
+    <Content Include="js\Common\jquery.datetimepicker.full.min.js" />
+    <Content Include="js\Common\jquery.dynasel.js" />
+    <Content Include="js\Common\jquery.fileupload.js" />
+    <Content Include="js\Common\jquery.iframe-transport.js" />
+    <Content Include="js\Common\jquery.jeditable.min.js" />
+    <Content Include="js\Common\jquery.timepicker.js" />
+    <Content Include="js\Common\jquery.timepicker.min.js" />
+    <Content Include="js\Common\jquery.ui.datepicker.language.js" />
+    <Content Include="js\Common\jquery.ui.widget.js" />
+    <Content Include="js\Common\NexessDemonFunc.js" />
+    <Content Include="js\Common\PopupHelper.js" />
+    <Content Include="js\Common\PortalCommon.js" />
+    <Content Include="js\Common\Presence.js" />
+    <Content Include="js\Common\purl.js" />
+    <Content Include="js\Common\vue.js" />
+    <Content Include="js\Common\vue.min.js" />
+    <Content Include="js\jquery.ui.js" />
+    <Content Include="js\jstree\.DS_Store" />
+    <Content Include="js\jstree\jstree.js" />
+    <Content Include="js\jstree\themes\.DS_Store" />
+    <Content Include="js\jstree\themes\default-dark\.DS_Store" />
+    <Content Include="js\jstree\themes\default-dark\32px.png" />
+    <Content Include="js\jstree\themes\default-dark\40px.png" />
+    <Content Include="js\jstree\themes\default-dark\style.css" />
+    <Content Include="js\jstree\themes\default-dark\style.min.css" />
+    <Content Include="js\jstree\themes\default-dark\throbber.gif" />
+    <Content Include="js\jstree\themes\default\.DS_Store" />
+    <Content Include="js\jstree\themes\default\32px.png" />
+    <Content Include="js\jstree\themes\default\40px.png" />
+    <Content Include="js\jstree\themes\default\style.css" />
+    <Content Include="js\jstree\themes\default\style.min.css" />
+    <Content Include="js\jstree\themes\default\throbber.gif" />
+    <Content Include="js\Static\jquery.ui.js" />
+    <Content Include="js\Static\vendors\css_browser_selector.min.js" />
+    <Content Include="js\Static\vendors\fullcalendar.min.js" />
+    <Content Include="js\Static\vendors\jquery-1.12.2.min.js" />
+    <Content Include="js\Static\vendors\jquery-ui.min.js" />
+    <Content Include="js\Static\vendors\jquery.flexslider-min.js" />
+    <Content Include="js\Static\vendors\jquery.nanoscroller.min.js" />
+    <Content Include="js\Static\vendors\jquery.placeholder.min.js" />
+    <Content Include="js\Static\vendors\jstree.js" />
+    <Content Include="js\Static\vendors\moment.min.js" />
+    <Content Include="js\Static\vendors\owl.carousel.js" />
+    <Content Include="js\Static\vendors\owl.carousel.min.js" />
+    <Content Include="js\Static\vendors\owl.carousel2.thumbs.js" />
+    <Content Include="js\vendors\.DS_Store" />
+    <Content Include="js\vendors\css_browser_selector.min.js" />
+    <Content Include="js\vendors\fullcalendar.min.js" />
+    <Content Include="js\vendors\jquery-1.12.2.min.js" />
+    <Content Include="js\vendors\jquery-ui.min.js" />
+    <Content Include="js\vendors\jquery.flexslider-min.js" />
+    <Content Include="js\vendors\jquery.nanoscroller.min.js" />
+    <Content Include="js\vendors\jquery.placeholder.min.js" />
+    <Content Include="js\vendors\jstree.js" />
+    <Content Include="js\vendors\moment.min.js" />
+    <Content Include="js\vendors\owl.carousel.js" />
+    <Content Include="js\vendors\owl.carousel.min.js" />
+    <Content Include="js\vendors\owl.carousel2.thumbs.js" />
+    <Content Include="js\_jquery.ui.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Connected Services\pcwnosqlAzureStorage\ConnectedService.json" />
     <Content Include="Base\MasterPages\BaseMasterPage.Master" />
+    <Content Include="Base\MasterPages\LnbMasterPage.master" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\obj\.DS_Store" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\웹 배포.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -136,6 +452,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PageHandler.aspx" />
+    <Content Include="Script\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -146,12 +463,33 @@
     <Compile Include="Base\MasterPages\BaseMasterPage.Master.designer.cs">
       <DependentUpon>BaseMasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Base\MasterPages\LnbMasterPage.master.cs">
+      <DependentUpon>LnbMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\MasterPages\LnbMasterPage.master.designer.cs">
+      <DependentUpon>LnbMasterPage.master</DependentUpon>
+    </Compile>
     <Compile Include="Base\StaticHeader\CommonClientScript.ascx.cs">
       <DependentUpon>CommonClientScript.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Base\StaticHeader\CommonClientScript.ascx.designer.cs">
       <DependentUpon>CommonClientScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\StaticHeader\GnbHeaderControl.ascx.cs">
+      <DependentUpon>GnbHeaderControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\StaticHeader\GnbHeaderControl.ascx.designer.cs">
+      <DependentUpon>GnbHeaderControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\Pages\BoardTest.aspx.cs">
+      <DependentUpon>BoardTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\Pages\BoardTest.aspx.designer.cs">
+      <DependentUpon>BoardTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="PageHandler.aspx.cs">
       <DependentUpon>PageHandler.aspx</DependentUpon>
@@ -166,7 +504,6 @@
     <Folder Include="Base\Controls\" />
     <Folder Include="Board\Base\" />
     <Folder Include="Board\Controls\" />
-    <Folder Include="Board\Pages\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

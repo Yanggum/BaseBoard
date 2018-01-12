@@ -16,7 +16,7 @@
     <RootNamespace>Pc.PcBoard.Resources</RootNamespace>
     <AssemblyName>Pc.PcBoard.Resources</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -95,7 +95,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\common.css" />
+    <Content Include="css\dashboard.css" />
     <Content Include="css\datepicker.css" />
     <Content Include="css\flexslider.css" />
     <Content Include="css\fullcalendar.css" />
@@ -326,8 +330,10 @@
     <Content Include="images\unifiedsearch\img_unifiedsearch.png" />
     <Content Include="js\Common\AjaxHelper.js" />
     <Content Include="js\Common\bootstrap-paginator.js" />
+    <Content Include="js\Common\bootstrap.js" />
     <Content Include="js\Common\bootstrap.min.js" />
     <Content Include="js\Common\clipboard.min.js" />
+    <Content Include="js\Common\jquery-3.2.1.js" />
     <Content Include="js\Common\jquery-3.2.1.min.js" />
     <Content Include="js\Common\jquery.cookie.js" />
     <Content Include="js\Common\jquery.datetimepicker.full.js" />
@@ -345,6 +351,7 @@
     <Content Include="js\Common\PortalCommon.js" />
     <Content Include="js\Common\Presence.js" />
     <Content Include="js\Common\purl.js" />
+    <Content Include="js\Common\vue.js" />
     <Content Include="js\Common\vue.min.js" />
     <Content Include="js\jquery.ui.js" />
     <Content Include="js\jstree\jstree.js" />
@@ -437,6 +444,9 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\리소스 배포.pubxml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -452,7 +462,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>65052</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:65052/</IISUrl>
+          <IISUrl>http://board.pcword.com/BoardResources</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://board.pcword.com/BoardResources</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

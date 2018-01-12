@@ -1,0 +1,8 @@
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Model\bin\Release\Pc.PcBoard.Model.dll
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Model\bin\Release\Pc.PcBoard.Model.pdb
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Model\bin\Release\Pc.PcBoard.BaseComponent.dll
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Model\bin\Release\Pc.PcBoard.BaseComponent.pdb
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Model\obj\Release\Pc.PcBoard.Model.csprojResolveAssemblyReference.cache
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Model\obj\Release\Pc.PcBoard.Model.csproj.CoreCompileInputs.cache
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Model\obj\Release\Pc.PcBoard.Model.dll
+D:\Project\Project\2018\PortalVuejs4\VueBoard\Model\obj\Release\Pc.PcBoard.Model.pdb
